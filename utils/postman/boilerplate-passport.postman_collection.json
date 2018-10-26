@@ -1,0 +1,241 @@
+{
+	"info": {
+		"name": "boilerplate-passport",
+		"_postman_id": "19b1f1f3-1a35-6c86-c1c1-af4e24284b44",
+		"description": "boilerplate-node-js-web-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n    \t\"email\": \"test@mail.it\",\n    \t\"password\": \"testPswd12\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n    \t\"email\": \"test7@mail.it\",\n    \t\"password\": \"testPswd12\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": { \n    \t\"email\": \"test7@mail.it\",\n    \t\"password\": \"testPswd12\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/users/current",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3Q3QG1haWwuaXQiLCJpZCI6IjViZDJmMmNmNjU0ZDBhOTJjNjdmMzkwMyIsImV4cCI6MTU0NTczODk4MiwiaWF0IjoxNTQwNTUxMzgyfQ.XzhTzya4jbTmXjIyzNTJeSI1Ip7TDI61RTERvnlm6Pg"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8000/api/users/current",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"current"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/songs",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3Q3QG1haWwuaXQiLCJpZCI6IjViZDJmMmNmNjU0ZDBhOTJjNjdmMzkwMyIsImV4cCI6MTU0NTczODk4MiwiaWF0IjoxNTQwNTUxMzgyfQ.XzhTzya4jbTmXjIyzNTJeSI1Ip7TDI61RTERvnlm6Pg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n    \t\"email\": \"test@mail.it\",\n    \t\"password\": \"testPswd12\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/songs?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"songs"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/songs/5bd2e50d187450f4863b4c45",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3Q3QG1haWwuaXQiLCJpZCI6IjViZDFlZGM4NzNhNjliZDMzZmY4NDAyNiIsImV4cCI6MTU0NTczMTM5NCwiaWF0IjoxNTQwNTQzNzk0fQ.dyqlBUu3Dp2a4oCnt3fAtfsCiQh7fR4aY4uYvzaAlRE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n    \t\"email\": \"test@mail.it\",\n    \t\"password\": \"testPswd12\"\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/songs/5bd2e50d187450f4863b4c45",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"songs",
+						"5bd2e50d187450f4863b4c45"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST http://localhost:8000/api/songs/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"test title 2\",\n    \"url\": \"http://localhost:3000/api/songs/\",\n    \"rating\": 4\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/songs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"songs",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
